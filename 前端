@@ -1,0 +1,93 @@
+html
+1.	section标签，定义一个区域
+2.	aside标签，定义一个侧边栏区域
+3.	<br>标签实现换行效果
+4.	使用特殊字符&nbsp;实现空格标签
+5.	使用<hr />标签实现水平线标签
+6.	使用<ul><li>标签实现无序列表
+7.	使用<ol><li>标签实现有序列表
+8.	使用<dl><dt><dd>标签实现定义列表
+9.	<img src="图片地址" alt="下载失败时的替换文本" title = "提示文本">
+10.	<a  href="目标网址"  title="鼠标滑过显示的文本">链接显示的文本</a>
+11.	a标签有的target属性，代表打开网页的方式。可选值为”_self和_blank”，默认值为_self，代表在当前页面打开链接，_blank代表在新窗口打开链接。
+12.	<table>…</table>：整个表格以<table>标记开始、</table>标记结束
+<tr>…</tr>：表格的一行，所以有几对tr 表格就有几行
+<td>…</td>：表格的一个单元格，一行中包含几对<td>...</td>，说明一行中就有几列
+<th>…</th>：表格的头部的一个单元格，表格表头
+border属性可以为表格添加边框，属性值为数字
+caption标签用来定义表格的标题
+13.	所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在 <form></form> 标签之间	
+<form   method="传送方式"   action="服务器文件">
+action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)
+method ： 数据传送的方式（get/post）
+14.	<input type="text/password" name="名称" value="文本" />
+input标签中占位符placeholder，placeholder属性为输入框占位符,里面可以放提示的输入信息,
+input的type属性设置为number,则表示该输入框的类型为数字
+input的type属性设置为url,则表示该输入框的类型为网址
+input的type属性设置为email,则表示该输入框的类型为邮箱
+15.	使用<textarea>标签创建文本域，<textarea  rows="行数" cols="列数">文本</textarea>
+16.	如果你在 label 标签内点击文本，就会触发此控件<label for="控件id名称">标签的 for 属性中的值应当与相关控件的 id 属性值一定要相同。
+17.	<input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/>
+type:
+  当 type="radio" 时，控件为单选框
+  当 type="checkbox" 时，控件为复选框
+value：提交数据到服务器的值（后台程序PHP使用）
+name：为控件命名，以备后台程序 ASP、PHP 使用
+checked：当设置 checked="checked" 时，该选项被默认选中
+同一组的单选按钮，name 取值一定要一致
+18.	select标签里面只能放option标签，表示下拉列表的选项。设置selected="selected"属性，则该选项就被默认选中
+19.	<input   type="submit"   value="提交">
+20.	<input type="reset" value="重置">
+CSS
+1.	选择器最高层级!important。注意：!important要写在分号的前面
+2.	使用font-family设置字体系列，使用font-size设置字体大小，使用font-weight设置字体粗细，使用font-style设置字体样式（正常字体为normal,也是font-style的默认值。italic为设置字体为斜体，用于字体本身就有倾斜的样式。oblique为设置倾斜的字体，强制将字体倾斜）
+可以简写body{
+    font:italic  bold  12px/1.5em  "宋体",sans-serif;}
+3.	text-decoration：text-decoration默认值为none, 定义标准的文本；underline为定义文本下的一条线；overline为定义文本上的一条线；line-through为定义穿过文本下的一条线
+4.	text-indent为文本添加首行缩进	em
+5.	line-height为文字设置行间间距	em
+6.	使用letter/word-spacing增加或减少字符间的空白	px
+7.	使用text-align设置文本对齐方式，对块状元素
+8.	display:block就是将元素显示为块级元素，display:inline将元素设置为内联元素（不可设置元素的高度、宽度、行高以及顶和底边距），display:inline-block就是将元素设置为内联块状元素
+9.	使用border为盒子添加边框
+10.	使用border-radius设置圆角
+11.	position:absolute(表示绝对定位) 最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。
+12.	position:relative（表示相对定位）相对于以前的位置移动，以前的位置还保留
+13.	position:fixed（表示固定定位）相对于屏幕内的网页窗口。和background-attachment:fixed;属性功能相同
+14.	参照定位的元素必须是相对定位元素的前辈元素，参照定位的元素必须加入position:relative; 定位元素加入position:absolute，便可以使用top、bottom、left、right来进行偏移定位了
+15.	设置display: flex属性可以把块级元素在一排显示。flex需要添加在父元素上，改变子元素的排列顺序。默认为从左往右依次排列,且和父元素左边没有间隙
+16.	justify-content属性定义了项目在主轴上的对齐方式。flex-start：交叉轴的起点对齐；flex-end：右对齐；center：居中；space-between：两端对齐，项目之间的间隔都相等；space-around：每个项目两侧的间隔相等，所以，项目之间的间隔比项目与边框的间隔大一倍
+17.	align-items属性定义了项目在交叉轴上的对齐方式。flex-start：默认值，左对齐；flex-end：交叉轴的终点对齐；center： 交叉轴的中点对齐；baseline：项目的第一行文字的基线对齐；stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度
+18.	给子元素设置flex属性,可以设置子元素相对于父元素的占比。flex属性的值只能是正整数,表示占比多少。给子元素设置了flex之后,其宽度属性会失效
+19.	如果被设置元素为文本、图片等行内元素时，水平居中是通过给父元素设置 text-align:center 来实现的
+20.	满足定宽和块状两个条件的元素是可以通过设置“左右margin”值为“auto”来实现居中的
+JS
+1.	定义一个函数：function 函数名()
+{
+     函数代码;
+}
+2.	document.write() 可用于直接向 HTML 输出流写内容
+3.	警告（alert 消息对话框）。语法：alert(字符串或变量)
+4.	确认（confirm 消息对话框）。语法：confirm(str)。str：在消息对话框中要显示的内容，返回值: Boolean值
+5.	提问（prompt 消息对话框）。语法：prompt(str1, str2)。str1: 要显示在消息对话框中的文本，不可修改；str2：文本框中的内容，可以修改
+6.	打开新窗口（window.open）。语法: window.open([URL], [窗口名称], [参数字符串])
+窗口名称：可选参数，被打开窗口的名称。
+    1.该名称由字母、数字和下划线字符组成。
+    2."_top"、"_blank"、"_self"具有特殊意义的名称。
+       _blank：在新窗口显示目标网页
+       _self：在当前窗口显示目标网页
+       _top：框架网页中在上部窗口中显示目标网页
+    3.相同 name 的窗口只能创建一个，要想创建多个窗口则 name 不能相同。
+   	   4.name 不能包含有空格。
+参数字符窜：（用逗号隔开）
+ 
+7.	关闭窗口（window.close）。语法：window.close();或<窗口对象>.close();  
+8.	通过ID获取元素 document.getElementById("id")
+9.	innerHTML 属性用于获取或替换 HTML 元素的内容。Object是获取的元素对象
+10.	改变 HTML 样式。语法:Object.style.property=new style;
+基本属性表（property）:略
+ 
+11.	显示和隐藏（display属性）。语法：Object.style.display = value
+value取值:
+ 
+12.	
